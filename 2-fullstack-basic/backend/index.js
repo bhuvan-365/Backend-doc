@@ -8,7 +8,7 @@
     // })
     
     // get a list of 5 popular jokes
-    app.get("/jokes",(req,res)=>{
+    app.get("/api/jokes",(req,res)=>{
     const jokes = [
     {
         id: 1,
