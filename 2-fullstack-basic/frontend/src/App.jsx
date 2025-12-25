@@ -7,7 +7,7 @@ function App() {
   const[jokes, setjokes] = useState([])
 
 useEffect(()=>{
-  axios.get("http://localhost:3000/api/jokes") //get("/api/jokes") stranda backend-a
+  axios.get("http://localhost:3000/api/jokes") //get("/api/jokes") standard way  backend-a
   .then((response)=>{
     setjokes(response.data)
   })
@@ -18,7 +18,7 @@ useEffect(()=>{
 
   return (
 <>
-<h1>Fullstack Basic Application</h1>
+<h1>Fullstack Basic Joke Application</h1>
 <p>JOKESl: {jokes.length}</p>
 {jokes.map((joke, index) => (
   <div key={joke.id}>
